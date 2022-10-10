@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='js/calc.js'></script>
+</head>
+<body>
+
+    <form method="post">
+
+        <h1 align="center">View Cart</h1>
+        <hr style="border: solid 1px; width:50%;">
+        <table align="center" cellpadding="3" cellspacing="3">
+            <tr>
+                <th>Id</th>
+                <th>Items</th>
+                <th>Pname</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>descriptions</th>
+                <th>Actions</th>
+            </tr>
+
+
+            <tr>
+                <td>1001</td>
+                <td><img src="images/l.jpg" style="width: 48px; height: 48px;"></td>
+                <td>Lion safari</td>
+                <td align="center"> &nbsp; &nbsp; Rs<input type="text" name="price" id="price" value="450000" style="border: none;" readonly></td>
+
+                <td><select name="qty" id="qty" onchange="return tot(this.value)">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                
+                </td>
+                <td>Its very denagerous</td>
+                <td><a href="#">Delete</a></td>
+                
+               </tr>
+
+            <tr>
+                <td align="right" colspan="7"><h2 align="right" style="background-color: black; color: white; padding: 5px;">Subtotal of items Rs. <label id="tt">450000</label></h2></td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

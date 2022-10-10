@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/calc.css'>
+   
+</head>
+<body>
+
+    <h2 align="center">Tops Javascript Calculator</h2>
+    <hr style="border:solid 1px; width:25%">
+    <table align="center" style="width: 25%;">
+        <tr>
+            <td><input type="text" name="result" id="result" placeholder="0" style="width: 96%; padding:5px">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="6" align="center">
+             
+                <button type="button"  id="display" value="1" onclick="return disp(this.value)">1</button>
+            
+                <button type="button"  id="display" value="2"  onclick="return disp(this.value)">2</button>
+
+                <button type="button"  id="display" value="3"  onclick="return disp(this.value)">3</button>
+
+                <button type="button" name="clear" id="display" onclick="clr()">C</button>
+
+            </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="6" align="center">
+             
+                <button type="button"  id="display" value="4"  onclick="return disp(this.value)">4</button>
+            
+                <button type="button"  id="display" value="5"  onclick="return disp(this.value)">5</button>
+
+                <button type="button"  id="display" value="6"  onclick="return disp(this.value)">6</button>
+
+                <button type="button"  id="display" value="+"  onclick="return disp(this.value)">+</button>
+
+            </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="6" align="center">
+             
+                <button type="button"  id="display" value="7"  onclick="return disp(this.value)">7</button>
+            
+                <button type="button"  id="display" value="8"  onclick="return disp(this.value)">8</button>
+
+                <button type="button"  id="display" value="9"  onclick="return disp(this.value)">9</button>
+
+                <button type="button"  id="display" value="-"   onclick="return disp(this.value)">-</button>
+
+            </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="6" align="center">
+             
+                <button type="button"  id="display" value="0"  onclick="return disp(this.value)">0</button>
+            
+                <button type="button"  id="display" value="/"  onclick="return disp(this.value)">/</button>
+
+                <button type="button"  id="display" value="%"  onclick="return disp(this.value)">%</button>
+
+                <button type="button"  id="display" value="*"  onclick="return disp(this.value)">*</button>
+
+            </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="6" align="center">
+             
+                <button type="button"  id="display" value="-+/"  onclick="return disp(this.value)">-+/</button>
+            
+                <button type="button"  id="display" value="."  onclick="return disp(this.value)">.</button>
+
+                <button type="button"  id="display" value="%"  onclick="return disp(this.value)">CE</button>
+
+                <button type="button"  id="display" value="="  onclick="final()">=</button>
+
+            </td>
+        </tr>
+    </table>
+    
+
+    <script src='js/calc.js'></script>
+</body>
+</html>
